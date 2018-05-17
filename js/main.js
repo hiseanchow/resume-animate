@@ -8,11 +8,10 @@ document.body.appendChild(editor);
 let styleTag = document.createElement('style');
 document.head.appendChild(styleTag);
 
-
 let CssCode = `/* 
 * 大家好，我是周硕。
 * 我最近在找一份前端的工作，
-* 在网上看到了有趣的简历，
+* 在网上看到了一份很有趣的简历，
 * 自己也尝试做一个。 
 */
 
@@ -42,7 +41,8 @@ html { perspective: 1000px }
 #editor {
     position: fixed;
     left: 0; top: 0; 
-    transform: rotateY(8deg) translateZ(-80px);
+    transform: rotateY(360deg) translateZ(-100px);
+    transform: rotateY(0) translateZ(0);
 }
 
 /* 接下来准一个编辑器写简历 */
@@ -52,7 +52,7 @@ let CssCode2 = `#paper{
     position: fixed;
     right: 0; top: 0;
     width: 48vw;
-    height: 90vh;
+    height: 95vh;
     background: white;
     margin: 1em;
     padding: 0.5em;
@@ -133,7 +133,7 @@ function writeCss(prefix, code, fn) {
             clearInterval(timer);
             fn && fn.call()
         }
-    }, 10);
+    }, 30);
 }
 
 function writeMarkdown(text, fn) {

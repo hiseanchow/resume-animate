@@ -9,3 +9,16 @@ body,#paper pre{
 	font-family: Arial,'Microsoft YaHei', Helvetica, sans-serif;
 	line-height: 1.4em;
 }
+
+@media screen and (max-width:540px){
+	#editor{
+		height: 40vh !important;
+		width: 92vw !important;
+	}
+	#paper {
+		height: 53vh !important;
+		width: 92vw !important;
+		top: 43vh !important;
+		left: 0;
+	}
+}
